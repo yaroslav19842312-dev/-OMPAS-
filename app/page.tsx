@@ -28,6 +28,12 @@ function ResultView({result,restart}:{result:Result;restart:()=>void}){
  <div className="grid2"><div className="panel"><h3>Векторы</h3><p>Действие: <b>{result.vector.action}</b></p><p>Отношения: <b>{result.vector.relationship}</b></p></div><div className="panel"><h3>Поведение</h3><p>Практический блок: <b>{result.behaviorScore}</b>/100</p></div></div>
  <div className="grid2"><div className="panel"><h3>Топ-3 мотива</h3>{result.motivations.map(x=><p key={x.name}>• {x.name} — {x.score}</p>)}</div><div className="panel"><h3>Топ-3 ценности</h3>{result.values.map(x=><p key={x.name}>• {x.name} — {x.score}</p>)}</div></div>
  <div className="panel"><h3>Направления для исследования</h3>{result.directions.slice(0,5).map(d=><div className="direction" key={d.name}><div><b>{d.name}</b><span>{d.description}</span></div><strong>{d.score}</strong></div>)}</div>
- <div className="note"><b>Следующий шаг:</b> выбери 1–2 направления и проведи профессиональную пробу. Сравни ожидание с реальным опытом.</div><p className="small">{result.disclaimer}</p><button className="goldBtn" onClick={restart}>Пройти ещё раз</button>
+ <div className="note"><b>Следующий шаг:</b> выбери 1–2 направления и проведи профессиональную пробу. Сравни ожидание с реальным опытом.</div>
+ <div className="resultActions">
+   <a className="goldBtn actionLink" href="/docs/kompas-professions-varna-checklist.pdf" target="_blank" rel="noopener noreferrer">Исследовать профессии · PDF</a>
+   <button className="ghostBtn" onClick={restart}>Пройти ещё раз</button>
+ </div>
+ <p className="small">В справочнике профессии распределены по преобладающей функции: Мастер, Предприниматель, Руководитель, Наставник. Смешанные роли отмечены отдельно.</p>
+ <p className="small">{result.disclaimer}</p>
  </section></div></main>
 }
