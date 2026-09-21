@@ -4,7 +4,7 @@ import { useState } from "react";
 type Q={id:number;block:string;text:string;options:{id:number;text:string}[]};
 type Result={leadingProfile:string;secondaryProfile:string;profileGap:number;profileScores:Record<string,number>;profileLevels:Record<string,string>;vector:{action:number;relationship:number};motivations:{name:string;score:number}[];values:{name:string;score:number}[];behaviorScore:number;directions:{name:string;description:string;score:number;hypothesis:string}[];disclaimer:string};
 
-const Dots=()=> <div className="dotFrame" aria-hidden="true">{Array.from({length:72}).map((_,i)=><i key={i}/>)}</div>;
+const Dots=()=> <div className="dotFrame" aria-hidden="true">{Array.from({length:108}).map((_,i)=><i key={i}/>)}</div>;
 const Compass=()=> <div className="compass" aria-hidden="true"><span className="ring"/><span className="north">N</span><span className="south">S</span><span className="west">W</span><span className="east">E</span><span className="needle">◆</span><span className="hub"/></div>;
 const Shell=({children}:{children:React.ReactNode})=> <main className="page"><div className="frame"><Dots/><div className="ornament o1">❧</div><div className="ornament o2">❧</div><div className="ornament o3">❧</div><div className="ornament o4">❧</div><Compass/>{children}<div className="mountains" aria-hidden="true"><span/><span/><span/></div></div></main>;
 
