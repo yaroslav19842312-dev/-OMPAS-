@@ -39,3 +39,32 @@
  .results{padding-top:44px;padding-bottom:58px}
  .results .small{font-size:13px;color:#4a361f;text-shadow:0 1px 2px rgba(255,244,214,.9)}
 }
+
+/* KOMPAS v1.6 — APPROVED OPEN HERO: no large text veil over the landscape */
+.hero:before{display:none!important}
+.hero{padding-top:66px;padding-bottom:54px;text-shadow:0 1px 2px rgba(255,248,224,.88)}
+.hero .brand,.hero .kicker,.hero h1,.hero h2,.hero .lead{position:relative;z-index:2}
+.hero .brand{color:#4d381e;text-shadow:0 1px 3px rgba(255,248,224,.95)}
+.hero .kicker{color:#76521f;text-shadow:0 1px 3px rgba(255,248,224,.95)}
+.hero h1{filter:drop-shadow(0 2px 1px rgba(255,244,207,.82))}
+.hero h2{font-weight:500;text-shadow:0 1px 3px rgba(255,247,219,.98),0 0 12px rgba(255,241,199,.72)}
+.hero .lead{color:#46331f;font-weight:500;text-shadow:0 1px 3px rgba(255,248,224,.98),0 0 12px rgba(255,241,199,.80)}
+.heroNote{max-width:650px;background:rgba(255,247,221,.36)!important;border:1px solid rgba(112,75,25,.34);border-left:4px solid rgba(157,114,39,.86);backdrop-filter:blur(1px)!important;box-shadow:0 6px 18px rgba(45,30,11,.06)!important}
+.timeNote{background:rgba(255,241,199,.18);padding:3px 9px;border-radius:12px}
+.motto{background:rgba(255,241,199,.26)!important}
+.mapBtn{margin-top:12px;min-width:390px;border-radius:3px;background:linear-gradient(180deg,rgba(246,225,171,.98),rgba(217,178,102,.98));box-shadow:0 9px 24px rgba(42,27,8,.28),inset 0 0 22px rgba(124,77,20,.12);color:#513314}
+
+@media(max-width:800px){
+ .frame{background-position:center top}
+ .hero{padding:78px 20px 34px;min-height:100svh;justify-content:flex-start}
+ .hero:before{display:none!important}
+ .hero .brand{font-size:clamp(10px,3vw,12px);letter-spacing:.18em;margin-bottom:12px}
+ .hero .kicker{font-size:clamp(10px,3vw,12px);letter-spacing:.16em;margin-bottom:16px}
+ .hero h1{font-size:clamp(50px,15vw,68px);letter-spacing:.055em;margin-bottom:16px}
+ .hero h2{font-size:clamp(23px,6.4vw,29px);line-height:1.12;margin:0 0 18px;text-shadow:0 1px 3px #fff4d5,0 0 14px rgba(255,244,213,.95)}
+ .hero .lead{font-size:clamp(16px,4.5vw,19px);line-height:1.42;margin:0 4px 18px;text-shadow:0 1px 3px #fff3d2,0 0 14px rgba(255,243,210,.96)}
+ .mapBtn{order:0;width:min(96%,460px);min-width:0;font-size:clamp(18px,5vw,22px);line-height:1.12;padding:18px 12px;margin:8px auto 14px}
+ .heroNote{font-size:clamp(14px,4vw,17px);line-height:1.35;margin:0 5px 12px;padding:12px 13px;background:rgba(255,247,221,.38)!important}
+ .timeNote{font-size:clamp(13px,3.7vw,16px);margin:0 0 10px;color:#3c2a16;background:rgba(255,241,199,.22);text-shadow:0 1px 3px #fff0c8,0 0 8px rgba(255,240,200,.9)}
+ .motto{margin-top:auto;margin-bottom:6px;font-size:clamp(11px,3.2vw,14px);line-height:1.35;padding:8px 12px;background:rgba(255,241,199,.34)!important;text-shadow:0 1px 3px #fff0c8}
+}
