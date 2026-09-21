@@ -68,3 +68,71 @@
  .timeNote{font-size:clamp(13px,3.7vw,16px);margin:0 0 10px;color:#3c2a16;background:rgba(255,241,199,.22);text-shadow:0 1px 3px #fff0c8,0 0 8px rgba(255,240,200,.9)}
  .motto{margin-top:auto;margin-bottom:6px;font-size:clamp(11px,3.2vw,14px);line-height:1.35;padding:8px 12px;background:rgba(255,241,199,.34)!important;text-shadow:0 1px 3px #fff0c8}
 }
+
+/* ============================================================
+   KOMPAS v1.7 — MOBILE PIXEL MATCH
+   Approved mobile artwork is rendered as the actual start screen.
+   The HTML CTA remains as an invisible accessible hit-area.
+   Test/result screens keep the working v1.6 UI.
+   ============================================================ */
+@media (max-width:800px){
+  .frame:has(.hero){
+    min-height:auto;
+    background-image:url('/assets/kompas-hero-mobile-pixel.png')!important;
+    background-size:100% auto!important;
+    background-position:top center!important;
+    background-repeat:no-repeat!important;
+    background-color:#082c22!important;
+  }
+  .frame:has(.hero):before,
+  .frame:has(.hero):after,
+  .frame:has(.hero) > .dotFrame,
+  .frame:has(.hero) > .ornament,
+  .frame:has(.hero) > .compass,
+  .frame:has(.hero) > .mountains{display:none!important}
+
+  .hero{
+    width:100%!important;
+    min-height:177.586vw!important; /* 1648 / 928 — exact artwork ratio */
+    height:177.586vw!important;
+    margin:0!important;
+    padding:0!important;
+    display:block!important;
+    position:relative!important;
+    text-shadow:none!important;
+  }
+  .hero:before{display:none!important}
+  .hero > .brand,
+  .hero > .kicker,
+  .hero > h1,
+  .hero > h2,
+  .hero > .lead,
+  .hero > .heroNote,
+  .hero > .timeNote,
+  .hero > .motto{display:none!important}
+
+  /* Transparent click target exactly over the parchment CTA in the artwork. */
+  .hero > .mapBtn{
+    position:absolute!important;
+    z-index:20!important;
+    left:11.6%!important;
+    top:73.1%!important;
+    width:76.8%!important;
+    height:8.7%!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    border-radius:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    color:transparent!important;
+    font-size:0!important;
+    opacity:1!important;
+    cursor:pointer!important;
+    -webkit-tap-highlight-color:rgba(255,255,255,.10);
+  }
+  .hero > .mapBtn span{display:none!important}
+  .hero > .mapBtn:hover,
+  .hero > .mapBtn:active{transform:none!important;filter:none!important;background:rgba(255,255,255,.035)!important}
+  .hero > .mapBtn:focus-visible{outline:3px solid rgba(255,232,155,.9)!important;outline-offset:-6px!important}
+}
