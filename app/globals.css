@@ -136,3 +136,6 @@
   .hero > .mapBtn:active{transform:none!important;filter:none!important;background:rgba(255,255,255,.035)!important}
   .hero > .mapBtn:focus-visible{outline:3px solid rgba(255,232,155,.9)!important;outline-offset:-6px!important}
 }
+
+/* v1.8 — bonus PDF guides */
+.bonusPanel{margin:18px 0 8px;padding:20px;background:rgba(255,249,229,.9);border:1px solid rgba(112,76,26,.34);box-shadow:0 7px 22px rgba(70,44,12,.08);border-radius:5px}.bonusKicker{font-size:11px;letter-spacing:.18em;color:#9a6f27;font-weight:bold;margin-bottom:5px}.bonusPanel h3{font-size:23px;margin:0 0 7px;color:#174432}.bonusPanel p{margin:0 0 15px;color:#543f27;line-height:1.45}.bonusGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.bonusLink{text-decoration:none;display:flex;flex-direction:column;gap:5px;padding:14px 15px;border:1px solid rgba(112,76,26,.34);background:rgba(255,246,218,.82);border-radius:5px;color:#174735;transition:.18s}.bonusLink:hover{transform:translateY(-2px);background:#fff3cf}.bonusLink b{font-size:14px;letter-spacing:.035em}.bonusLink span{font-size:12px;color:#8b6424;font-weight:bold}@media(max-width:800px){.bonusPanel{padding:15px}.bonusPanel h3{font-size:20px}.bonusGrid{grid-template-columns:1fr}.bonusLink{padding:13px 14px}}
