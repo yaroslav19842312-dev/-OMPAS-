@@ -32,6 +32,17 @@ function ResultView({result,restart}:{result:Result;restart:()=>void}){
  <div className="note"><b>Следующий шаг:</b> выбери 1–2 направления, попробуй их в действии и сравни ожидание с реальным опытом.</div>
  <div className="bonusPanel"><div className="bonusKicker">ТВОЙ БОНУС</div><h3>4 путеводителя по профессиям</h3><p>Исследуй не только своё ведущее направление. Многие профессии соединяют сразу несколько сильных сторон.</p><div className="bonusGrid"><a className="bonusLink" href="/docs/kompas-master.pdf" target="_blank" rel="noopener noreferrer"><b>МАСТЕР</b><span>Открыть PDF →</span></a><a className="bonusLink" href="/docs/kompas-predprinimatel.pdf" target="_blank" rel="noopener noreferrer"><b>ПРЕДПРИНИМАТЕЛЬ</b><span>Открыть PDF →</span></a><a className="bonusLink" href="/docs/kompas-rukovoditel.pdf" target="_blank" rel="noopener noreferrer"><b>РУКОВОДИТЕЛЬ</b><span>Открыть PDF →</span></a><a className="bonusLink" href="/docs/kompas-uchitel-mudrec.pdf" target="_blank" rel="noopener noreferrer"><b>УЧИТЕЛЬ-МУДРЕЦ</b><span>Открыть PDF →</span></a></div></div>
  <div className="resultActions"><button className="ghostBtn" onClick={restart}>Пройти ещё раз</button></div>
+  <div className="resultActions">
+  <a
+    className="ghostBtn"
+    href="https://forms.yandex.ru/u/6acd2aea1f1eb57bc900031b"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ display: "inline-block", textDecoration: "none" }}
+  >
+    Помоги нам сделать КОМПАС точнее!
+  </a>
+</div>
  <p className="small">Профессии сгруппированы по четырём направлениям реализации: Мастер, Предприниматель, Руководитель и Учитель-Мудрец. Многие профессии сочетают несколько направлений.</p><p className="small">{result.disclaimer}</p>
 <footer style={{textAlign:"center",marginTop:"32px",padding:"20px 12px",borderTop:"1px solid rgba(139,105,45,0.45)",color:"#214b3b",fontSize:"14px",lineHeight:"1.8"}}>
   <div>© 2026 ИП Бобрецкий Ярослав Олегович</div>
