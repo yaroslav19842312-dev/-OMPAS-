@@ -11,8 +11,8 @@ export async function POST(req: Request) {
     if (!answers || typeof answers !== "object") {
       return NextResponse.json({error:"Неверный формат ответов."},{status:400});
     }
-    if (Object.keys(answers).length !== 56) {
-      return NextResponse.json({error:"Нужно ответить на все 56 вопросов."},{status:400});
+    if (Object.keys(answers).length !== 80) {
+      return NextResponse.json({error:"Нужно ответить на все 80 вопросов."},{status:400});
     }
     return NextResponse.json(calculateResult(answers), {headers:{"Cache-Control":"no-store"}});
   } catch (e:any) {

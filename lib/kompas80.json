@@ -1,0 +1,2632 @@
+{
+  "schema_version": "1.0.0",
+  "methodology_status": "draft_not_psychometrically_validated",
+  "source_document": "КОМПАС - методические вопросы..docx",
+  "source_sha256": "238c392dbcfac49896a22a8de38718d5d3d0a2f01a8657fcde8f7625f9538e8d",
+  "canonical_item_count": 80,
+  "excluded_archive": "Obsolete VECTOR 25-30 appears in source and was excluded due to conflict with MOTIVATION 25-32. Canonical VECTOR is 51-56.",
+  "directions": {
+    "master": "Мастер",
+    "entrepreneur": "Предприниматель",
+    "leader": "Руководитель",
+    "mentor": "Учитель-Мудрец"
+  },
+  "motivation_labels": {
+    "achievement": "Достижение",
+    "benefit": "Польза",
+    "interest": "Интерес",
+    "reward": "Материальное вознаграждение",
+    "autonomy": "Самостоятельность",
+    "recognition": "Признание",
+    "development": "Развитие",
+    "communication": "Общение"
+  },
+  "value_labels": {
+    "fairness": "Справедливость",
+    "freedom": "Свобода",
+    "relationships": "Близкие отношения",
+    "knowledge": "Познание",
+    "care": "Забота",
+    "development": "Развитие",
+    "creation": "Созидание",
+    "responsibility": "Ответственность"
+  },
+  "vector_labels": {
+    "analysis": "Анализ",
+    "empathy": "Эмпатия",
+    "action": "Действие",
+    "interaction": "Взаимодействие"
+  },
+  "trait_labels": {
+    "responsibility": "Ответственность",
+    "perseverance": "Настойчивость",
+    "autonomy": "Самостоятельность",
+    "self_discipline": "Самодисциплина",
+    "honesty": "Честность",
+    "self_regulation": "Саморегуляция"
+  },
+  "scoring": {
+    "professional": {
+      "item_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "formula": "count(direction among items 1..24) / 24 * 100",
+      "missing_answer_policy": "incomplete; no final percentage",
+      "rounding": "one_decimal; retain raw counts",
+      "all_four_sum": 24,
+      "no_thresholds": true
+    },
+    "motivation": {
+      "item_ids": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "formula": "count selected key across 8 questions",
+      "each_key_appears": 4,
+      "interpretation": "descriptive frequency only; no validated scales"
+    },
+    "values": {
+      "item_ids": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "formula": "count selected key across 8 questions",
+      "each_key_appears": 4,
+      "interpretation": "descriptive frequency only; no validated scales"
+    },
+    "behavior": {
+      "item_ids": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "formula": "none; store choices and reflection prompts",
+      "no_score": true
+    },
+    "control": {
+      "pairs": [
+        [
+          1,
+          47
+        ],
+        [
+          11,
+          48
+        ],
+        [
+          16,
+          49
+        ]
+      ],
+      "attention": {
+        "id": 50,
+        "expected": "В"
+      },
+      "no_score": true,
+      "no_blocking": true
+    },
+    "vector": {
+      "item_ids": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "formula": "count selected key across 6 questions",
+      "no_professional_contribution": true
+    },
+    "character": {
+      "item_ids": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "response_points": {
+        "А": 0,
+        "Б": 1,
+        "В": 2,
+        "Г": 3
+      },
+      "reverse_coding_research_only": [
+        60,
+        63,
+        67,
+        71,
+        74,
+        78
+      ],
+      "trait_ranges": {
+        "responsibility": [
+          57,
+          60
+        ],
+        "perseverance": [
+          61,
+          64
+        ],
+        "autonomy": [
+          65,
+          68
+        ],
+        "self_discipline": [
+          69,
+          72
+        ],
+        "honesty": [
+          73,
+          76
+        ],
+        "self_regulation": [
+          77,
+          80
+        ]
+      },
+      "public_report": "show responses and reflection prompts; do not display trait scores/percentages/rankings",
+      "critical_flags": [
+        60,
+        74
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Какую роль ты выбрал бы в интересном проекте?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Создавать что-то своими руками",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Придумать продукт и предложить его людям",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Собрать команду и организовать работу",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Разобраться в теме и объяснить другим",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "В какой сфере тебе было бы интереснее побывать изнутри?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "В мастерской или на производстве",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "В компании, которая создаёт и продаёт товары",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "В центре управления большим проектом",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "В исследовательской или образовательной организации",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Что тебе интереснее придумать с нуля?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Устройство или полезную вещь",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Товар или услугу, которые нужны людям",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "План большого совместного проекта",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Способ понятно объяснить сложную тему",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Какой процесс тебе интереснее наблюдать?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Как из материалов создают готовую вещь",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Как новая идея находит своих покупателей",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Как участники объединяют усилия для общей цели",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Как исследователи находят ответы на сложные вопросы",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Что тебе хотелось бы попробовать на практике?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Изготовить полезную вещь",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Предложить людям свой товар или услугу",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Организовать командное мероприятие",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Провести небольшое обучающее занятие",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Какую тему ты готов изучать несколько недель?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Способы создания и улучшения изделий",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Как находить клиентов и развивать своё дело",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Как управлять командными проектами",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Как исследовать сложные вопросы и объяснять открытия",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Какую проблему тебе интереснее решить?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Как починить сломанную вещь",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Как сделать полезную идею востребованной",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Как наладить работу команды",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Как объяснить сложную тему",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "block": "Интересы",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Каким способом тебе интереснее помогать людям?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Создавать или чинить необходимые им вещи",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Предлагать полезные товары и услуги",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Организовывать людей для решения общих задач",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Помогать людям получать знания и разбираться в вопросах",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Что тебе кажется наиболее естественным?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Работать с вещами и создавать что-то",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Замечать потребности людей и предлагать решения",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Организовывать совместные действия",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Разбираться в вопросах и объяснять их",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Чему тебе, как кажется, легче научиться?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Пользоваться инструментами и создавать изделия",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Находить покупателей для полезного продукта",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Планировать работу группы",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Разбираться в новой теме и передавать знания",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Получив незнакомую задачу, с чего тебе хочется начать?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Попробовать сделать что-нибудь на практике",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Понять, кому нужен результат и как его применить",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Определить порядок действий и роли участников",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Выяснить, как всё устроено и почему",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Что ты чаще замечаешь в окружающих делах?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Что можно изготовить, исправить или улучшить",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Какая потребность людей ещё не удовлетворена",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Где людям не хватает согласованности",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Что осталось непонятным и требует объяснения",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Какое действие обычно даётся тебе легче?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Собрать или настроить что-нибудь",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Предложить идею так, чтобы ею заинтересовались",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Договориться о совместных действиях",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Объяснить сложное простыми словами",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Когда дело застопорилось, что тебе ближе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Проверить на практике и исправить неполадку",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Найти другой способ получить нужный людям результат",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Пересогласовать действия участников",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Разобраться в причине затруднения",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "В общем деле какую роль ты обычно занимаешь без просьб?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Беру на себя практическую часть",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Ищу возможности для реализации идеи",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Помогаю распределить работу",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Помогаю другим разобраться в теме",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "block": "Природные склонности",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "К какому делу ты сам возвращаешься снова и снова?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Мастерить, собирать или улучшать",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Придумывать, как воплотить полезную идею для людей",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Организовывать совместные дела",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Изучать темы и делиться открытиями",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "В команде готовят важный проект. За какой результат ты хотел бы отвечать?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Чтобы всё было качественно сделано.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Чтобы проект оказался полезным и востребованным.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Чтобы команда выполнила общую задачу.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Чтобы участники хорошо разобрались в теме.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Команда выбирает один из нескольких способов выполнить проект. Что тебе интереснее выяснить?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Какой способ лучше работает на практике.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Какой способ больше нужен будущим пользователям.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Какой способ позволит команде действовать согласованно.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Почему один способ может оказаться лучше другого.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Участники команды не согласны друг с другом. Какой вклад тебе хотелось бы внести?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Показать на деле, как может работать один из вариантов.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Найти решение, которое учитывает потребности тех, для кого делается проект.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Помочь участникам договориться и продолжить работу.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Прояснить причины разногласий и объяснить разные точки зрения.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "У команды осталось мало времени до завершения проекта. На чём ты сосредоточишься?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "На завершении самой важной практической части.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "На том, чтобы результат был полезен тем, для кого он создаётся.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "На согласовании задач и сроков участников.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "На проверке главной информации, от которой зависит результат.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Во время проекта неожиданно изменились условия. Что ты скорее сделаешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Приспособлю практическую часть к новым условиям.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Поищу новые возможности для реализации идеи.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Помогу команде перестроить общий план.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Разберусь, что изменилось и как это повлияет на проект.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Для проекта не хватает материалов, денег или оборудования. Что тебе ближе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Попробовать выполнить задачу из того, что уже есть.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Найти дополнительные ресурсы или партнёров.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Распределить имеющиеся ресурсы между задачами.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Найти информацию о доступных способах решения.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "Проект завершён. Тебе предлагают помочь другой команде. Что ты выберешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Показать, как изготовить или настроить нужную вещь.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Помочь найти тех, кому пригодится результат проекта.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Помочь распределить задачи и наладить совместную работу.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Объяснить команде то, в чём ты уже разобрался.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "block": "Профили",
+      "type": "professional",
+      "response_format": "forced_choice",
+      "prompt": "После завершения проекта команда обсуждает, что улучшить в следующий раз. Что тебе интереснее предложить?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Улучшить качество изготовления или работы результата.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Сделать результат более полезным и востребованным.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Улучшить распределение задач и взаимодействие команды.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Лучше изучить тему и разобраться в допущенных ошибках.",
+          "key": "mentor"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Что сильнее всего побуждает тебя взяться за новое дело?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Возможность добиться заметного результата.",
+          "key": "achievement"
+        },
+        {
+          "letter": "Б",
+          "text": "Возможность сделать что-то полезное для других.",
+          "key": "benefit"
+        },
+        {
+          "letter": "В",
+          "text": "Интерес к необычной идее или занятию.",
+          "key": "interest"
+        },
+        {
+          "letter": "Г",
+          "text": "Возможность получить материальное вознаграждение.",
+          "key": "reward"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Что помогает тебе дольше сохранять желание заниматься делом?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Возможность самостоятельно выбирать, как действовать.",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Б",
+          "text": "Когда окружающие замечают и ценят мои усилия.",
+          "key": "recognition"
+        },
+        {
+          "letter": "В",
+          "text": "Когда я вижу, что учусь новому и становлюсь опытнее.",
+          "key": "development"
+        },
+        {
+          "letter": "Г",
+          "text": "Когда рядом люди, с которыми приятно работать.",
+          "key": "communication"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Тебе предлагают поучаствовать в длительном проекте. Что особенно привлекает?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Возможность довести дело до конкретного результата.",
+          "key": "achievement"
+        },
+        {
+          "letter": "Б",
+          "text": "Возможность освоить новые знания и умения.",
+          "key": "development"
+        },
+        {
+          "letter": "В",
+          "text": "Возможность самостоятельно принимать решения.",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Г",
+          "text": "Возможность заработать на выполненной работе.",
+          "key": "reward"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Какой момент в совместном деле приносит тебе больше радости?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Когда результат действительно помогает людям.",
+          "key": "benefit"
+        },
+        {
+          "letter": "Б",
+          "text": "Когда удаётся попробовать что-то необычное.",
+          "key": "interest"
+        },
+        {
+          "letter": "В",
+          "text": "Когда мою работу замечают и высоко оценивают.",
+          "key": "recognition"
+        },
+        {
+          "letter": "Г",
+          "text": "Когда вместе с другими получается хорошо провести время за делом.",
+          "key": "communication"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Что помогает тебе продолжать работу, когда становится трудно?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Желание завершить начатое и увидеть результат.",
+          "key": "achievement"
+        },
+        {
+          "letter": "Б",
+          "text": "Желание доказать себе и другим, что я справлюсь.",
+          "key": "recognition"
+        },
+        {
+          "letter": "В",
+          "text": "Любопытство: интересно узнать, что получится дальше.",
+          "key": "interest"
+        },
+        {
+          "letter": "Г",
+          "text": "Поддержка людей, с которыми мы работаем.",
+          "key": "communication"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Какое условие сделает для тебя новое дело более привлекательным?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Я буду знать, кому и чем оно поможет.",
+          "key": "benefit"
+        },
+        {
+          "letter": "Б",
+          "text": "Я смогу приобрести полезный опыт и новые умения.",
+          "key": "development"
+        },
+        {
+          "letter": "В",
+          "text": "У меня будет возможность самому выбирать способы работы.",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Г",
+          "text": "За хороший результат предусмотрено материальное вознаграждение.",
+          "key": "reward"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Представь, что проект завершился успешно. Что особенно важно лично для тебя?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Мы достигли поставленной цели.",
+          "key": "achievement"
+        },
+        {
+          "letter": "Б",
+          "text": "Наша работа принесла пользу людям.",
+          "key": "benefit"
+        },
+        {
+          "letter": "В",
+          "text": "Я многому научился за время проекта.",
+          "key": "development"
+        },
+        {
+          "letter": "Г",
+          "text": "Мой вклад заметили и оценили.",
+          "key": "recognition"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "block": "Мотивация",
+      "type": "motivation",
+      "response_format": "forced_choice",
+      "prompt": "Что ты больше всего хотел бы получать от будущей работы?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Возможность заниматься тем, что мне действительно интересно.",
+          "key": "interest"
+        },
+        {
+          "letter": "Б",
+          "text": "Свободу самостоятельно принимать решения.",
+          "key": "autonomy"
+        },
+        {
+          "letter": "В",
+          "text": "Достойное материальное вознаграждение.",
+          "key": "reward"
+        },
+        {
+          "letter": "Г",
+          "text": "Возможность работать с людьми, с которыми мне хорошо.",
+          "key": "communication"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Каким принципом тебе важнее руководствоваться в жизни?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Относиться к людям справедливо.",
+          "key": "fairness"
+        },
+        {
+          "letter": "Б",
+          "text": "Сохранять право самостоятельно выбирать свой путь.",
+          "key": "freedom"
+        },
+        {
+          "letter": "В",
+          "text": "Беречь отношения с близкими людьми.",
+          "key": "relationships"
+        },
+        {
+          "letter": "Г",
+          "text": "Стремиться понимать мир и искать истину.",
+          "key": "knowledge"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Что ты особенно хотел бы привнести в жизнь окружающих?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Заботу и поддержку.",
+          "key": "care"
+        },
+        {
+          "letter": "Б",
+          "text": "Возможности для роста и развития.",
+          "key": "development"
+        },
+        {
+          "letter": "В",
+          "text": "Полезные вещи, идеи и результаты труда.",
+          "key": "creation"
+        },
+        {
+          "letter": "Г",
+          "text": "Ответственное отношение к общим делам.",
+          "key": "responsibility"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Если предстоит важный жизненный выбор, что для тебя особенно важно?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Чтобы решение было честным и справедливым.",
+          "key": "fairness"
+        },
+        {
+          "letter": "Б",
+          "text": "Чтобы оно оставалось моим собственным выбором.",
+          "key": "freedom"
+        },
+        {
+          "letter": "В",
+          "text": "Чтобы оно учитывало благополучие других людей.",
+          "key": "care"
+        },
+        {
+          "letter": "Г",
+          "text": "Чтобы оно помогало мне становиться лучше.",
+          "key": "development"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Что ты особенно ценишь в обществе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Стремление людей к знаниям и пониманию.",
+          "key": "knowledge"
+        },
+        {
+          "letter": "Б",
+          "text": "Сохранение близких и доверительных отношений.",
+          "key": "relationships"
+        },
+        {
+          "letter": "В",
+          "text": "Когда люди выполняют свои обязательства.",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Г",
+          "text": "Когда люди создают что-то полезное.",
+          "key": "creation"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Каким вкладом в мир ты хотел бы гордиться?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Тем, что поступал справедливо.",
+          "key": "fairness"
+        },
+        {
+          "letter": "Б",
+          "text": "Тем, что стремился заботиться о других.",
+          "key": "care"
+        },
+        {
+          "letter": "В",
+          "text": "Тем, что создавал полезные вещи или идеи.",
+          "key": "creation"
+        },
+        {
+          "letter": "Г",
+          "text": "Тем, что помогал людям узнавать и понимать новое.",
+          "key": "knowledge"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Что тебе особенно важно сохранить на протяжении жизни?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Возможность самостоятельно принимать решения.",
+          "key": "freedom"
+        },
+        {
+          "letter": "Б",
+          "text": "Близкие и доверительные отношения.",
+          "key": "relationships"
+        },
+        {
+          "letter": "В",
+          "text": "Стремление учиться и развиваться.",
+          "key": "development"
+        },
+        {
+          "letter": "Г",
+          "text": "Верность своим обещаниям и обязательствам.",
+          "key": "responsibility"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Какое качество ты особенно хотел бы укрепить в себе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Умение отстаивать справедливость.",
+          "key": "fairness"
+        },
+        {
+          "letter": "Б",
+          "text": "Стремление разбираться в сложных вопросах.",
+          "key": "knowledge"
+        },
+        {
+          "letter": "В",
+          "text": "Внимательность к потребностям других.",
+          "key": "care"
+        },
+        {
+          "letter": "Г",
+          "text": "Ответственность за свои решения и поступки.",
+          "key": "responsibility"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "block": "Ценности",
+      "type": "values",
+      "response_format": "forced_choice",
+      "prompt": "Что для тебя особенно важно в будущем?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Свобода выбирать свой жизненный путь.",
+          "key": "freedom"
+        },
+        {
+          "letter": "Б",
+          "text": "Возможность поддерживать близкие отношения.",
+          "key": "relationships"
+        },
+        {
+          "letter": "В",
+          "text": "Постоянное личное развитие.",
+          "key": "development"
+        },
+        {
+          "letter": "Г",
+          "text": "Возможность создавать что-то полезное для мира.",
+          "key": "creation"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "block": "Поведение",
+      "type": "reflection",
+      "response_format": "reflection",
+      "prompt": "Ты обещал выполнить важное дело, но понял, что не успеваешь. Как ты обычно поступаешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Предупреждаю заранее и стараюсь договориться о новом сроке.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Стараюсь всё успеть, даже если приходится менять свои планы.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Откладываю разговор, надеясь, что ещё успею.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Прошу помощи, чтобы выполнить обещанное.",
+          "key": null
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "block": "Поведение",
+      "type": "reflection",
+      "response_format": "reflection",
+      "prompt": "Ты несколько раз пытался решить сложную задачу, но пока не получилось. Что ты обычно делаешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Пробую другой способ.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Делаю перерыв и возвращаюсь позже.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Обращаюсь за подсказкой или помощью.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Переключаюсь на другое дело и не всегда возвращаюсь к задаче.",
+          "key": null
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "block": "Поведение",
+      "type": "reflection",
+      "response_format": "reflection",
+      "prompt": "Тебе нужно принять решение, а рядом нет человека, который обычно подсказывает. Как ты поступаешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Выбираю сам, опираясь на то, что уже знаю.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Сначала собираю дополнительную информацию.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Стараюсь связаться с кем-нибудь и посоветоваться.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Откладываю решение, пока не появится возможность обсудить его.",
+          "key": null
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "block": "Поведение",
+      "type": "reflection",
+      "response_format": "reflection",
+      "prompt": "Тебе нужно выполнить не очень интересное, но важное задание. Что обычно происходит?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Начинаю с небольшой части, чтобы втянуться.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Составляю план и стараюсь его придерживаться.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Откладываю задание, пока не почувствую, что готов начать.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Мне легче приступить, если кто-то напоминает или работает рядом.",
+          "key": null
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "block": "Поведение",
+      "type": "reflection",
+      "response_format": "reflection",
+      "prompt": "Ты допустил ошибку, которая повлияла на общее дело. Как ты обычно реагируешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Рассказываю об ошибке и предлагаю её исправить.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Сначала пытаюсь исправить всё самостоятельно.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Мне трудно сразу признаться, и я некоторое время откладываю разговор.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Сначала обсуждаю ситуацию с человеком, которому доверяю.",
+          "key": null
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "block": "Поведение",
+      "type": "reflection",
+      "response_format": "reflection",
+      "prompt": "Во время важного дела ты сильно расстроился или разозлился. Что обычно делаешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Беру небольшую паузу, чтобы успокоиться.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Стараюсь продолжать дело, несмотря на переживания.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Обсуждаю свои чувства с человеком, которому доверяю.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Мне бывает трудно сдержать эмоции, и я могу резко отреагировать.",
+          "key": null
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "block": "Контроль",
+      "type": "control_consistency",
+      "response_format": "forced_choice",
+      "prompt": "Представь, что тебе снова предложили выбрать роль в интересном проекте. Что ты предпочтёшь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Создавать и улучшать что-то на практике.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Придумывать, как сделать продукт полезным и востребованным.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Организовывать совместную работу участников.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Изучать тему и помогать другим разобраться в ней.",
+          "key": "mentor"
+        }
+      ],
+      "compare_to": 1
+    },
+    {
+      "id": 48,
+      "block": "Контроль",
+      "type": "control_consistency",
+      "response_format": "forced_choice",
+      "prompt": "Если тебе дают незнакомое задание, какой первый шаг тебе ближе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Попробовать выполнить часть задания на практике.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Выяснить, кому нужен результат и какую пользу он принесёт.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Продумать порядок действий и участие других людей.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Разобраться, как устроена задача и почему её решают именно так.",
+          "key": "mentor"
+        }
+      ],
+      "compare_to": 11
+    },
+    {
+      "id": 49,
+      "block": "Контроль",
+      "type": "control_consistency",
+      "response_format": "forced_choice",
+      "prompt": "К какому занятию ты охотнее возвращаешься по собственной инициативе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Мастерить, собирать или улучшать вещи.",
+          "key": "master"
+        },
+        {
+          "letter": "Б",
+          "text": "Искать способы воплотить полезную идею.",
+          "key": "entrepreneur"
+        },
+        {
+          "letter": "В",
+          "text": "Организовывать совместные дела.",
+          "key": "leader"
+        },
+        {
+          "letter": "Г",
+          "text": "Изучать интересные темы и делиться знаниями.",
+          "key": "mentor"
+        }
+      ],
+      "compare_to": 16
+    },
+    {
+      "id": 50,
+      "block": "Контроль",
+      "type": "control_attention",
+      "response_format": "instruction",
+      "prompt": "Внимательно прочитай инструкцию: в этом вопросе выбери вариант «Третий ответ».",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Первый ответ.",
+          "key": null
+        },
+        {
+          "letter": "Б",
+          "text": "Второй ответ.",
+          "key": null
+        },
+        {
+          "letter": "В",
+          "text": "Третий ответ.",
+          "key": null
+        },
+        {
+          "letter": "Г",
+          "text": "Четвёртый ответ.",
+          "key": null
+        }
+      ],
+      "expected_option": "В"
+    },
+    {
+      "id": 51,
+      "block": "ВЕКТОР",
+      "type": "vector",
+      "response_format": "forced_choice",
+      "prompt": "Перед тобой возникла сложная задача. Что тебе хочется сделать сначала?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Разобраться в причинах трудности.",
+          "key": "analysis"
+        },
+        {
+          "letter": "Б",
+          "text": "Понять, как эта ситуация влияет на других людей.",
+          "key": "empathy"
+        },
+        {
+          "letter": "В",
+          "text": "Попробовать один из способов решения.",
+          "key": "action"
+        },
+        {
+          "letter": "Г",
+          "text": "Обсудить возможные решения с другими.",
+          "key": "interaction"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "block": "ВЕКТОР",
+      "type": "vector",
+      "response_format": "forced_choice",
+      "prompt": "В команде кто-то допустил ошибку. Как ты скорее отреагируешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Постараюсь выяснить причину ошибки.",
+          "key": "analysis"
+        },
+        {
+          "letter": "Б",
+          "text": "Поддержу человека, если он расстроен.",
+          "key": "empathy"
+        },
+        {
+          "letter": "В",
+          "text": "Предложу попробовать исправить ошибку.",
+          "key": "action"
+        },
+        {
+          "letter": "Г",
+          "text": "Обсужу с командой, как исправить ситуацию вместе.",
+          "key": "interaction"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "block": "ВЕКТОР",
+      "type": "vector",
+      "response_format": "forced_choice",
+      "prompt": "Ты оказался в незнакомой обстановке. Что тебе ближе?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Понаблюдать и понять, как всё устроено.",
+          "key": "analysis"
+        },
+        {
+          "letter": "Б",
+          "text": "Обратить внимание на настроение окружающих.",
+          "key": "empathy"
+        },
+        {
+          "letter": "В",
+          "text": "Начать что-нибудь пробовать самостоятельно.",
+          "key": "action"
+        },
+        {
+          "letter": "Г",
+          "text": "Познакомиться с людьми и расспросить их об этом месте.",
+          "key": "interaction"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "block": "ВЕКТОР",
+      "type": "vector",
+      "response_format": "forced_choice",
+      "prompt": "Твой знакомый столкнулся с трудностью. Какую помощь ты скорее предложишь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Вместе разобраться в причинах проблемы.",
+          "key": "analysis"
+        },
+        {
+          "letter": "Б",
+          "text": "Выслушать его и поддержать.",
+          "key": "empathy"
+        },
+        {
+          "letter": "В",
+          "text": "Помочь сделать первый шаг к решению.",
+          "key": "action"
+        },
+        {
+          "letter": "Г",
+          "text": "Подумать, кого ещё можно привлечь для помощи.",
+          "key": "interaction"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "block": "ВЕКТОР",
+      "type": "vector",
+      "response_format": "forced_choice",
+      "prompt": "Ты пришёл на встречу людей, с которыми будешь заниматься новым общим делом. Что тебе хочется сделать?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Узнать подробности задачи и её условия.",
+          "key": "analysis"
+        },
+        {
+          "letter": "Б",
+          "text": "Понять, что волнует и интересует участников.",
+          "key": "empathy"
+        },
+        {
+          "letter": "В",
+          "text": "Попробовать выполнить небольшую часть работы.",
+          "key": "action"
+        },
+        {
+          "letter": "Г",
+          "text": "Познакомиться с участниками и обсудить совместные действия.",
+          "key": "interaction"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "block": "ВЕКТОР",
+      "type": "vector",
+      "response_format": "forced_choice",
+      "prompt": "Выбранный тобой способ решения не сработал. Что ты скорее сделаешь?",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Выясню, почему он не сработал.",
+          "key": "analysis"
+        },
+        {
+          "letter": "Б",
+          "text": "Обращу внимание, как неудача повлияла на других.",
+          "key": "empathy"
+        },
+        {
+          "letter": "В",
+          "text": "Попробую другой способ действий.",
+          "key": "action"
+        },
+        {
+          "letter": "Г",
+          "text": "Предложу вместе обсудить новый план.",
+          "key": "interaction"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если я обещаю что-то сделать, я стараюсь выполнить обещанное в срок.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "responsibility"
+        }
+      ],
+      "trait": "responsibility",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 58,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Когда понимаю, что не успеваю выполнить обещание, я заранее предупреждаю об этом.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "responsibility"
+        }
+      ],
+      "trait": "responsibility",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 59,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если общее дело зависит от моей работы, я помню о своей части задачи.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "responsibility"
+        }
+      ],
+      "trait": "responsibility",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 60,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если я взялся за дело, мне бывает трудно признать, что нужна помощь.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "responsibility"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "responsibility"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "responsibility"
+        }
+      ],
+      "trait": "responsibility",
+      "reverse_scored": true,
+      "scoring_status": "research_only_not_for_public_trait_labels",
+      "review_flag": "Do not treat as valid reverse-scored trait indicator until revised and tested"
+    },
+    {
+      "id": 61,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если задача не получается с первого раза, я пробую ещё раз.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "perseverance"
+        }
+      ],
+      "trait": "perseverance",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 62,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Когда один способ не работает, я ищу другой.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "perseverance"
+        }
+      ],
+      "trait": "perseverance",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 63,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "После неудачи мне трудно вернуться к начатому делу.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "perseverance"
+        }
+      ],
+      "trait": "perseverance",
+      "reverse_scored": true,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 64,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Я могу продолжать работать над важной целью, даже если результат появляется не сразу.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "perseverance"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "perseverance"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "perseverance"
+        }
+      ],
+      "trait": "perseverance",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 65,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Перед важным решением я стараюсь самостоятельно обдумать возможные варианты.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "autonomy"
+        }
+      ],
+      "trait": "autonomy",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 66,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если задача мне по силам, я могу начать её без постоянных напоминаний.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "autonomy"
+        }
+      ],
+      "trait": "autonomy",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 67,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Мне трудно сделать выбор, пока кто-нибудь не скажет, как лучше поступить.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "autonomy"
+        }
+      ],
+      "trait": "autonomy",
+      "reverse_scored": true,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 68,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Я могу объяснить, почему принял то или иное решение.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "autonomy"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "autonomy"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "autonomy"
+        }
+      ],
+      "trait": "autonomy",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 69,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Я могу приступить к важному делу, даже когда оно не очень интересное.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_discipline"
+        }
+      ],
+      "trait": "self_discipline",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 70,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Я стараюсь придерживаться намеченного плана, если он по-прежнему подходит.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_discipline"
+        }
+      ],
+      "trait": "self_discipline",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 71,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Я часто откладываю важные дела до последнего момента.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_discipline"
+        }
+      ],
+      "trait": "self_discipline",
+      "reverse_scored": true,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 72,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Когда меня что-то отвлекает, я стараюсь вернуться к своей задаче.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_discipline"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_discipline"
+        }
+      ],
+      "trait": "self_discipline",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 73,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если я допустил ошибку, я могу признать её перед теми, кого она затронула.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "honesty"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "honesty"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "honesty"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "honesty"
+        }
+      ],
+      "trait": "honesty",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 74,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Мне бывает трудно сказать правду, если я боюсь неприятных последствий.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "honesty"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "honesty"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "honesty"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "honesty"
+        }
+      ],
+      "trait": "honesty",
+      "reverse_scored": true,
+      "scoring_status": "research_only_not_for_public_trait_labels",
+      "review_flag": "Do not treat as valid reverse-scored trait indicator until revised and tested"
+    },
+    {
+      "id": 75,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если я чего-то не знаю, я могу открыто сказать об этом.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "honesty"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "honesty"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "honesty"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "honesty"
+        }
+      ],
+      "trait": "honesty",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 76,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если моя ошибка повлияла на других, я стараюсь помочь исправить последствия.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "honesty"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "honesty"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "honesty"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "honesty"
+        }
+      ],
+      "trait": "honesty",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 77,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Когда я сильно расстроен, я могу сделать паузу перед ответом или действием.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_regulation"
+        }
+      ],
+      "trait": "self_regulation",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 78,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "В раздражении я иногда говорю то, о чём потом жалею.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_regulation"
+        }
+      ],
+      "trait": "self_regulation",
+      "reverse_scored": true,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 79,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "Если я переживаю из-за трудной ситуации, я стараюсь найти способ успокоиться.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_regulation"
+        }
+      ],
+      "trait": "self_regulation",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    },
+    {
+      "id": 80,
+      "block": "ХАРАКТЕР",
+      "type": "character",
+      "response_format": "frequency",
+      "prompt": "После сильных переживаний я постепенно могу вернуться к обычным делам.",
+      "options": [
+        {
+          "letter": "А",
+          "text": "Почти никогда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Б",
+          "text": "Иногда",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "В",
+          "text": "Часто",
+          "key": "self_regulation"
+        },
+        {
+          "letter": "Г",
+          "text": "Почти всегда",
+          "key": "self_regulation"
+        }
+      ],
+      "trait": "self_regulation",
+      "reverse_scored": false,
+      "scoring_status": "research_only_not_for_public_trait_labels"
+    }
+  ]
+}
