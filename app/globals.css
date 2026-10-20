@@ -259,3 +259,47 @@
  .approvedMobileCopyright{font-size:clamp(10px,2.6vw,12px);line-height:1.45;font-weight:700;margin-top:15px}
 }
 @media(max-width:360px){.approvedMobile{padding:16px 10px}.approvedMobileLogo{margin:0}.approvedMobile h2{font-size:20px}.approvedMobileLead{font-size:13px}.approvedMobileNote{font-size:13px}}
+
+
+/* KOMPAS responsive layout fix — append to app/globals.css */
+/* Preserve the approved home artwork, question logic, and PDF guides. */
+html, body { max-width: 100%; overflow-x: clip; }
+.frame { max-width: 100%; }
+.hero, .test, .results { min-width: 0; }
+
+/* Give instructions and question cards more room on desktop. */
+@media (min-width: 801px) {
+  .frame > .test { width: min(1100px, calc(100% - 64px)); max-width: 1100px !important; padding: 58px 48px 64px !important; }
+  .frame > .test:before { inset: 28px 12px !important; }
+  .frame > .results { width: min(1120px, calc(100% - 64px)); padding-left: 48px; padding-right: 48px; }
+  .frame > .results:before { inset: 30px 12px !important; }
+}
+
+/* Long headings must never overflow a card or a phone viewport. */
+.results h1, .test h1, .test h2, .cardHead span,
+.panel, .card, .bonusLink, .option { min-width: 0; overflow-wrap: anywhere; }
+.results h1 { line-height: 1.08; }
+.cardHead { gap: 8px; }
+.cardHead span { flex: 1 1 auto; }
+.cardHead strong { flex: 0 0 auto; }
+
+@media (max-width: 800px) {
+  .frame > .test { width: 100% !important; max-width: none !important; padding: 40px 24px 54px !important; }
+  .frame > .test:before { inset: 12px 8px !important; }
+  .frame > .results { width: 100% !important; padding: 38px 24px 60px !important; }
+  .frame > .results:before { inset: 12px 8px !important; }
+  .results h1 { font-size: clamp(25px, 7vw, 39px) !important; letter-spacing: 0 !important; overflow-wrap: anywhere; hyphens: auto; }
+  .test h1 { font-size: clamp(24px, 6.5vw, 34px) !important; line-height: 1.15; }
+  .cards, .grid2, .bonusGrid { grid-template-columns: minmax(0, 1fr) !important; }
+  .cardHead { flex-wrap: wrap; }
+  .cardHead span { font-size: clamp(15px, 4vw, 19px); }
+  .cardHead strong { font-size: clamp(20px, 6vw, 25px); }
+  .test .scrollBtn { max-width: 100% !important; white-space: normal; }
+  .test .scrollSmall { width: min(100%, 330px) !important; }
+  .option { grid-template-columns: 32px minmax(0, 1fr) 14px; }
+}
+@media (max-width: 390px) {
+  .frame > .results { padding-left: 18px !important; padding-right: 18px !important; }
+  .frame > .test { padding-left: 18px !important; padding-right: 18px !important; }
+  .results h1 { font-size: clamp(23px, 6.7vw, 27px) !important; }
+}
